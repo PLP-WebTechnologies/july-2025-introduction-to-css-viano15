@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Section Web Page Example</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Multi-Section Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="lists">
+        <h2>Lists Example</h2>
+        <h3>Favorite Fruits (Ordered List)</h3>
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>mango</li>
+            <li>orange</li>
+        </ol>
+        <h3>Hobbies (Unordered List)</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Cycling</li>
+            <li>Photography</li>
+        </ul>
+        <h3>Steps to Make Tea (Description List)</h3>
+        <dl>
+            <dt>Boil Water</dt>
+            <dd>Heat water until it boils.</dd>
+            <dt>Add Tea bags</dt>
+            <dd>Put tea in hot water and wait till it changes colour.</dd>
+            <dt>Add milk and suger</dt>
+            <dd>Enjoy your tea.</dd>
+        </dl>
+    </section>
+
+    <section id="tables">
+        <h2>Tables Example</h2>
+        <table border="1">
+            <caption>Weekly Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Gym</td>
+                    <td>7:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>music rehaserl</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Movie Night</td>
+                    <td>8:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Media Example</h2>
+        <figure>
+            <img src="file:///C:/Users/Explicit/Downloads/imgres.htm" alt="Sample Image" width="300" height="200">
+            <figcaption>A sample image.</figcaption>
+        </figure>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+        <video width="320" height="240" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="form">
+        <h2>Contact Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required> <option value="cameroon">Cameroon</option>
+                <option value="USA">United states</option>
+                    <option value="Angola">Angola</option>
+                        <option value="canada">canada</option>
+            <option value="Egypt">Egypt</option><option value="Ethiopia">Ethiopia</option>
+            <option value="Nigeria">Nigeria </option>
+            <option value="Tanzania">Tanzania </option>
+            <option value="SA"> South Africa </option>
+        <option value="Kenya">Kenya</option>
+        <option value="Uganda">Uganda </option>
+    <option value="Sudan">Sudan</option>
+<option value="Ghana">Ghana</option></select><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" id="favcolor" name="favcolor"><br><br>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" pattern="https?://.+" placeholder="https://example.com"><br><br>
+
+                <label>Subscribe to newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40" required minlength="10" maxlength="500"></textarea>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+</html>
